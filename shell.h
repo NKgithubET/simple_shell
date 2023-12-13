@@ -5,6 +5,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#include <sys/wait.h>
+#define MAX_ARGS 64
+=======
+>>>>>>> 2aca8e38c9ea7681812ef5f93cf42c31e947a84e
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
@@ -36,6 +43,10 @@
 
 extern char **environ;
 
+<<<<<<< HEAD
+=======
+>>>>>>> 33a6edc6cdb05856004acdc9443007ea9768d8c2
+>>>>>>> 2aca8e38c9ea7681812ef5f93cf42c31e947a84e
 
 /**
  * struct liststr - singly linked list
@@ -231,5 +242,10 @@ void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
+<<<<<<< HEAD
+=======
+
+char *user_input(char *buffer, size_t size);
+>>>>>>> 2aca8e38c9ea7681812ef5f93cf42c31e947a84e
 
 #endif
