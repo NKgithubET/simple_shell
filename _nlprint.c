@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * _nlprint - Prints a newline-terminated string to the standard output.

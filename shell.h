@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <string.h>
+#include <sys/wait.h>
+#define MAX_ARGS 64
 
 /**
  * prompt_display - Displays a prompt message.
@@ -23,5 +25,7 @@ void _nlprint(const char *display);
  * @command: The command to be executed.
  */
 void exe_cmd(const char *command);
+
+char *user_input(char *buffer, size_t size);
 
 #endif

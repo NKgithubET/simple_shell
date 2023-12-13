@@ -12,7 +12,7 @@ int main(void)
 	while (1)
 	{
 		prompt_display();
-		user_input(command, sizeof(command);
+		user_input(command, sizeof(command));
 		exe_cmd(command);
 
 	}

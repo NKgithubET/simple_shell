@@ -17,7 +17,17 @@ void exe_cmd(const char *command)
 	}
 	else if (child_pid == 0)
 		{
-		execve(command, command, (char *) NULL);
+			int i = 1;
+			char *tokenized_args[MAX_ARGS];
+			tokenized_args[0] = strtok((char *)command, " \t\n");
+
+			while (i < MAX_ARGS && (tokenized_args[i] = strtok(NULL, " \t\n")) != NULL)
+			{
+				i++;
+			}
+			tokenized_args[i] = NULL;
+		execve(tokenized_args[0], tokenized_args, NULL);
+
 		perror("execve");
 		exit(EXIT_FAILURE);
 		}
