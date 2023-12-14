@@ -33,6 +33,7 @@
 
 #define HIST_FILE	".simple_shell_history"
 #define HIST_MAX	4096
+#define MAX_ARGS 50
 
 extern char **environ;
 

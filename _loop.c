@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * hsh - main shell loop
- * @info: the parameter & return info struct
- * @av: the argument vector from main()
+ * hsh - shows main shell loop
+ * @info: specifies the parameter & return info struct
+ * @av: specifies the argument vector from main()
  *
  * Return: 0 on success, 1 on error, or error code
  */
@@ -79,7 +79,7 @@ int find_builtin(info_t *info)
 
 /**
  * find_cmd - finds a command in PATH
- * @info: the parameter & return info struct
+ * @info: specifies the parameter & return info struct
  *
  * Return: void
  */
@@ -121,7 +121,7 @@ void find_cmd(info_t *info)
 
 /**
  * fork_cmd - forks a an exec thread to run cmd
- * @info: the parameter & return info struct
+ * @info: specifies the parameter & return info struct
  *
  * Return: void
  */
@@ -132,7 +132,7 @@ void fork_cmd(info_t *info)
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-		/* TODO: PUT ERROR FUNCTION */
+		/* TODO: PUT ERROR FUNCTION: */
 		perror("Error:");
 		return;
 	}
