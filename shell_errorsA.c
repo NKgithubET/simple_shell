@@ -2,7 +2,7 @@
 
 /**
  * Return: 0 if no numbers in string, converted number otherwise
- *       -1 on error
+ *       -1 on errors
  */
 int _erratoi(char *s)
 {
